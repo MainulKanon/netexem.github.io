@@ -1689,16 +1689,7 @@
             <div class="panel panel-body ">
               <h3 class="">Art Elements</h3>
                <p>This information will be used in the project</p>
-               
-               <style>
-                 .dropdown:hover > .dropdown-menu {
-    display: block;
-}
-.dropdown > .dropdown-toggle:active {
-    /*Without this, clicking will make it sticky*/
-    pointer-events: none;
-}
-               </style>
+ 
                <div class="row"> 
                <!-- Example Basic Dropdown -->
                   <div class="col-xl-3 col-lg-3 col-md-6">
@@ -1719,6 +1710,15 @@
                       </div>
                     </div>
                   </div>
+
+
+
+                  
+
+
+
+
+
 
 
                   <!-- Example Basic Dropdown 2 -->
@@ -1746,8 +1746,8 @@
                       <div class="example-wrap">
                         <div class="example example-dropdown">
                           <div class="dropdown">
-                            <button type="button" class="btn btn-default dropdown-toggle btn-block" id="exampleBasicDropdown"
-                              data-toggle="dropdown" aria-expanded="true">
+                            <button type="button" class="btn dropdown-toggle btn-block" id="exampleBasicDropdown"
+                              data-toggle="dropdown" aria-expanded="true" aria-expanded="true">
                               Eyes
                             </button>
                             <div class="dropdown-menu btn-block" aria-labelledby="exampleBasicDropdown" role="menu">
@@ -1765,20 +1765,22 @@
                     <div class="col-xl-3 col-lg-3 col-md-6">
                       <div class="example-wrap">
                         <div class="example example-dropdown">
-                          <div class="dropdown">
-                            <button type="button" class="btn btn-default dropdown-toggle btn-block" id="exampleBasicDropdown"
-                              data-toggle="dropdown" aria-expanded="true">
-                              Dropdown
+                          <div class="dropdown btn-block">
+                          <div class="">
+                            <button type="button" class="btn btn-outline btn-default dropdown-toggle btn-block" id="exampleHoverDropdown3" data-hover="dropdown" data-toggle="dropdown" aria-expanded="false">
+                             Onclick open
                             </button>
-                            <div class="dropdown-menu btn-block" aria-labelledby="exampleBasicDropdown" role="menu">
+                            <div class="dropdown-menu btn-block" aria-labelledby="exampleHoverDropdown3" role="menu" x-placement="top-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, -188px, 0px);">
                               <a class="dropdown-item" href="javascript:void(0)" role="menuitem">Action</a>
                               <a class="dropdown-item" href="javascript:void(0)" role="menuitem">Another action</a>
                               <a class="dropdown-item" href="javascript:void(0)" role="menuitem">Something else here</a>
+                              <div class="dropdown-divider"></div>
                               <a class="dropdown-item" href="javascript:void(0)" role="menuitem">Separated link</a>
                             </div>
                           </div>
+                          </div>
                         </div>
-                      </div>
+                      </div> 
                     </div>
 
 
@@ -1933,10 +1935,10 @@
 
                       </div>
 
-                </div>>
-                </div>>
+                </div>
+                </div>
 
-            <div class="w-500 w-only-xs-300 ml-auto mr-auto mt-40">
+            <div class="w-500 w-only-xs-300 ml-auto mr-auto mt-20">
               <button type="button" class="btn btn-success w-p100"><i class="icon wb-chevron-down-mini" aria-hidden="true"></i> Generate Sample Set Of Images</button>
               <p class="px-15 pt-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, ea.</p>
             </div>
@@ -2035,11 +2037,14 @@
     <script src="global/vendor/jquery/jquery.js"></script>
     <script src="global/vendor/popper-js/umd/popper.min.js"></script>
     <script src="global/vendor/bootstrap/bootstrap.js"></script>
+    <script src="global/vendor/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script> 
     <script src="global/vendor/animsition/animsition.js"></script>
     <script src="global/vendor/mousewheel/jquery.mousewheel.js"></script>
     <script src="global/vendor/asscrollbar/jquery-asScrollbar.js"></script>
     <script src="global/vendor/asscrollable/jquery-asScrollable.js"></script>
     <script src="global/vendor/ashoverscroll/jquery-asHoverScroll.js"></script>
+    <script src="global/vendor/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js"></script> 
+    
     
     <!-- Plugins -->
 
