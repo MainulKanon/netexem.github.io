@@ -20,12 +20,12 @@
     
     <!-- Plugins -->
     <link rel="stylesheet" href="global/vendor/animsition/animsition.css">
-
     <link rel="stylesheet" href="global/vendor/slidepanel/slidePanel.css">
-        <link rel="stylesheet" href="global/vendor/magnific-popup/magnific-popup.css">
-        <link rel="stylesheet" href="assets/examples/css/advanced/lightbox.css">
-
-        <link rel="stylesheet" href="global/vendor/nestable/nestable.css">
+    <link rel="stylesheet" href="global/vendor/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="assets/examples/css/advanced/lightbox.css">
+    <link rel="stylesheet" href="global/vendor/nestable/nestable.css">
+    <link rel="stylesheet" href="global/vendor/jquery-tabledit/jquery-tabledit.min.css">
+    
     
     <!-- Fonts -->
         <link rel="stylesheet" href="global/fonts/weather-icons/weather-icons.css">
@@ -1689,15 +1689,51 @@
                <div class="panel-body">
                  <h3 class="">Edit Art Elements</h3>
                  <p>This information will be used in the project</p>
-                      <form class="form-group">
-                      <input type="text" class="form-control" name="name" autocomplete="off" placeholder="Project Name">
-                      <br>
-                      <textarea type="text" class="form-control" name="project_description" autocomplete="off" rows="3" placeholder="Project Description"></textarea>
-                    </form>
-               </div>
-            </div>
-          </div>
-        </div>
+
+                    <div class="example table-responsive">
+                      <table id="tableditWithEditButtonOnly" class="table table-striped table-bordered">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>Teagan</td>
+                            <td>Prohaska</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>Andy</td>
+                            <td>Gaylord</td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>Veronica</td>
+                            <td>Gusikowski</td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td>Bruce</td>
+                            <td>Rogahn</td>
+                          </tr>
+                          <tr>
+                            <td>5</td>
+                            <td>Carolina</td>
+                            <td>Hickle</td>
+                          </tr>
+                          <tr>
+                            <td>6</td>
+                            <td>Madaline</td>
+                            <td>Eichmann</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  
         <!-- End Edit Art Elements Section -->
 
         <!-- Dropdown Group Start -->
@@ -1894,8 +1930,7 @@
     <script src="global/vendor/asscrollbar/jquery-asScrollbar.js"></script>
     <script src="global/vendor/asscrollable/jquery-asScrollable.js"></script>
     <script src="global/vendor/ashoverscroll/jquery-asHoverScroll.js"></script>
-    <script src="global/vendor/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js"></script> 
-    <script src="global/vendor/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script> 
+    
     
     
     <!-- Plugins -->
@@ -1903,6 +1938,7 @@
 
     <script src="global/vendor/slidepanel/jquery-slidePanel.js"></script>
     <script src="global/vendor/magnific-popup/jquery.magnific-popup.js"></script>
+    <script src="global/vendor/jquery-tabledit/jquery.tabledit.min.js"></script>
         <!-- <script src="global/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.js"></script> -->
 
 
