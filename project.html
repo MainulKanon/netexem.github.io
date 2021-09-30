@@ -1604,120 +1604,52 @@
     <!-- Page -->
     <div class="page">
       <div class="page-content container-fluid">
-        
-        
-    <form autocomplete="off">
-        
-        <!-- Start Project Details Section -->
-        <div class="row">
-          <div class="col-12">
-            <div class="panel">
-               <div class="panel-body">
-
-                 <h3 class="">Project Details</h3>
-                 <p>This information will be used in your meta data for the project</p>
-                     <div class="row">
-                      <div class="form-group col-md-6">
-                        <label class="form-control-label" for="inputProjectName">Project Name</label>
-                        <input type="text" class="form-control" id="inputProjectName" name="inputProjectName" placeholder="Project Name" autocomplete="off">
-                      </div>
-                      <div class="form-group col-md-6">
-                        <label class="form-control-label" for="inputContractSymbol">Contract Symbol</label>
-                        <input type="text" class="form-control" id="inputContractSymbol" name="inputContractSymbol" placeholder="BAYC" autocomplete="off">
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label class="form-control-label" for="inputProjectDiscription">Project Discription</label>
-                      <textarea class="form-control" id="inputProjectDiscription" name="inputProjectDiscription" placeholder="Project Discription" autocomplete="off"></textarea>
-                    </div>
-    
-               </div>
-            </div>
-          </div>
-        </div>
-        <!-- End Project Details Section -->
-
-        <!-- Start Minting Section -->
-        <div class="row">
+          
+           <!-- Start Project Page -->
+           <div class="row">
             <div class="col-12">
-              <div class="panel">
+              <div class="">       
                  <div class="panel-body">
-  
-                   <h3 class="">Minting</h3>
-                   <p>This information will be used in your contract</p>
-                       <div class="row">
-                        <div class="form-group col-md-6">
-                          <label class="form-control-label" for="inputTotalSupply">Total Supply (20,000 max) </label>
-                          <input type="number" class="form-control" id="inputTotalSupply" name="inputTotalSupply" placeholder="10,000" min="1" max="20000" autocomplete="off">
+                    <div class="d-flex justify-content-between mb-30">
+                        <h3 class="">Project</h3>
+                        <button class="btn btn-primary"> Start New Project</button>
+                    </div>
+
+                     <div class="row ">
+                         <!--Start Project Cart Section -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card ">
+                                <img class="card-img-top img-fluid w-full" src="global/photos/placeholder.png" alt="Card image cap">
+                                <div class="card-block">
+                                <h4 class="card-title">Project Name</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-primary">Button</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="form-group col-md-6">
-                          <label class="form-control-label" for="inputMintPrice">Mint Price - ETH.08</label>
-                          <input type="number" class="form-control" id="inputMintPrice" name="inputMintPrice" placeholder=".08" autocomplete="off">
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card ">
+                                <img class="card-img-top img-fluid w-full" src="global/photos/placeholder.png" alt="Card image cap">
+                                <div class="card-block">
+                                <h4 class="card-title">Project Name</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-primary">Button</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="form-group col-md-6">
-                            <label class="form-control-label" for="inputMaxNumberMints">Max number mints per wallet (10)</label>
-                            <input type="number" class="form-control" id="inputMaxNumberMints" name="inputMaxNumberMints" min="1" max="1000" placeholder="20" autocomplete="off">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label class="form-control-label" for="inputTypeOfMinting">Type Of Minting</label>
-                            <select class="form-control" id="inputTypeOfMinting">
-                              <option>Select a Type</option>
-                              <option>Blind Ment</option>
-                              <option>Mine to mint</option>
-                            </select>
-                          </div>
-                      </div>
-  
+
+                     <!--End Project Cart Section -->  
+                     </div>
+                     
+      
                  </div>
               </div>
             </div>
           </div>
-          <!-- End Minting Section -->
-
-          <!-- Start Payouts Section -->
-        <div class="row">
-          <div class="col-12">
-            <div class="panel">
-               <div class="panel-body">
-
-                 <h3 class="">Payouts</h3>
-                 <p>Distribution of funds from minting sale and secondary royalties </p>
-                     <div class="row">
-                      <div class="col-6">
-                            <div class="form-group">
-                              <h4 class="example-title"> Minting</h4>
-                              <label class="form-control-label float-left" for="inputPlatformFee"> Platform Fee </label>
-                              <label class="form-control-label float-right"> 100% </label>
-                              <input type="number" class="form-control" id="inputTotalSupply" name="inputPlatformFee" placeholder="NFTLand eth " autocomplete="off">
-                            </div>
-                            <div class="form-group">
-                              <label class="form-control-label" for="inputMintingFunds">Minting Funds </label>
-                              <input type="number" class="form-control" id="inputMintingFunds" name="inputMintingFunds" placeholder="00" autocomplete="off">
-                            </div>
-                            <button type="button" class="btn btn-primary">Add Wallet</button>
-                        </div>
-
-                      <div class="col-6">
-                        <h4 class="example-title"> Secondary royalties </h4>
-                          <div class="form-group">
-                              <label class="form-control-label float-left" for="inputPlatformFee"> Platform Fee </label>
-                              <label class="form-control-label float-right">  Total Royalties 4% </label>
-                              <input type="number" class="form-control" id="inputPlatformFee" name="inputPlatformFee"  placeholder="NFTLand eth " autocomplete="off">
-                          </div>
-                          <div class="form-group">
-                              <label class="form-control-label" for="inputJefftheDEV">Jeff the DEV </label>
-                              <input type="number" class="form-control" id="inputJefftheDEV" name="inputJefftheDEV"  placeholder="00 " autocomplete="off">
-                          </div>
-                          <button type="button" class="btn btn-primary">Add Wallet</button>
-                    </div>
-
-               </div>
-            </div>
-          </div>
-        </div>
-        <!-- End Payouts Section -->
-
-    </form>
+          <!-- End Project Page -->
+        
+    
         
   </div>
   </div>
