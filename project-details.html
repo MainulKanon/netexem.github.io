@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="global/vendor/jquery-tabledit/jquery-tabledit.min.css">
     <link rel="stylesheet" href="global/vendor/jquery-tabledit/basic.css">
     <link rel="stylesheet" href="global/vendor/dropify/dropify.css">
+    <link rel="stylesheet" href="global/vendor/asRange/asRange.css">
     
     
     <!-- Fonts -->
@@ -1726,14 +1727,24 @@
                               <h4 class="example-title"> Minting</h4>
                               <label class="form-control-label float-left" for="inputPlatformFee"> Platform Fee </label>
                               <label class="form-control-label float-right"> 100% </label>
-                              <input type="number" class="form-control" id="inputTotalSupply" name="inputPlatformFee" placeholder="NFTLand eth " autocomplete="off">
+                              <div class="input-group input-group-icon">
+                                <input type="text" class="form-control" id="inputTotalSupply" name="inputPlatformFee" placeholder="NFTLand eth " autocomplete="off">
+                                <div class="input-group-append">
+                                  <div class="input-group-text bg-white">
+                                    <span class="icon wb-lock" aria-hidden="true"></span>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                             <div class="form-group">
                               <label class="form-control-label" for="inputMintingFunds">Minting Funds </label>
-                              <input type="text" class="form-control" id="inputMintingFunds" name="inputMintingFunds" placeholder="00" autocomplete="off">
-                              <div class="input-group">
-                                <i class="form-control-icon form-control-icon-right wb-map"></i>
-                                <input class="form-control" type="text" name="right" placeholder="right">
+                              <div class="input-group input-group-icon">
+                                <input type="text" class="form-control" id="inputMintingFunds" name="inputMintingFunds" placeholder="00" autocomplete="off">
+                                <div class="input-group-append">
+                                  <div class="input-group-text bg-white">
+                                    <span class="icon wb-lock" aria-hidden="true"></span>
+                                  </div>
+                                </div>
                               </div>
                             </div>
                     
@@ -1758,6 +1769,15 @@
                                                <label class="form-control-label pb-0" for="inputWalletAddress">Wallet Address (Do not use ENS OX ) </label>
                                                <input type="text" class="form-control" id="inputWalletAddress" name="inputWalletAddress" placeholder="Ox2150644217fA0c9A4077DA95137aAF6B7647A10d4"  autocomplete="off">
                                              </div>
+                                             <div class="form-group mb-10 ">
+                                              <label class="form-control-label" for="inputWalletAddress">What % of the project </label>
+                                              <!-- Range slider-->
+                                              <input class="asRange" data-plugin="asRange" data-namespace="rangeUi" step="1"
+                                                 data-min="0"  data-max="100" data-tip="true" data-value="0"> 
+                                              <!-- End Range slider -->
+                                            </div>
+                                              
+
                                          </div>
                                          <div class="modal-footer"> 
                                            <button type="button" class="btn" data-dismiss="modal" aria-label="Close">Close</button>
@@ -1774,13 +1794,27 @@
                           <div class="form-group">
                               <label class="form-control-label float-left" for="inputPlatformFee"> Platform Fee </label>
                               <label class="form-control-label float-right">  Total Royalties 4% </label>
-                              <input type="number" class="form-control" id="inputPlatformFee" name="inputPlatformFee"  placeholder="NFTLand eth " autocomplete="off">
+                              <div class="input-group input-group-icon">
+                                <input type="text" class="form-control" id="inputPlatformFee" name="inputPlatformFee"  placeholder="NFTLand eth " autocomplete="off">
+                                <div class="input-group-append">
+                                  <div class="input-group-text bg-white">
+                                    <span class="icon wb-lock" aria-hidden="true"></span>
+                                  </div>
+                                </div>
+                              </div>
                           </div>
                           <div class="form-group">
-                              <label class="form-control-label" for="inputJefftheDEV">Jeff the DEV </label>
-                              <input type="text" class="form-control" id="inputJefftheDEV" name="inputJefftheDEV"  placeholder="00 " autocomplete="off">
+                              <label class="form-control-label" for="inputJefftheDEV">Jeff the DEV </label> 
+                              <div class="input-group input-group-icon">
+                                <input type="text" class="form-control" id="inputJefftheDEV" name="inputJefftheDEV"  placeholder="00 " autocomplete="off">
+                                <div class="input-group-append">
+                                  <div class="input-group-text bg-white">
+                                    <span class="icon wb-close" aria-hidden="true"></span>
+                                  </div>
+                                </div>
+                              </div>
                           </div>
-                          <button type="button" class="btn btn-primary">Add Wallet</button>
+                          <button type="button" class="btn btn-primary" data-target="#addWallet"data-toggle="modal" >Add Wallet</button>
                     </div>
 
                </div>
@@ -1846,6 +1880,8 @@
     <script src="global/vendor/jquery-tabledit/jquery.tabledit.js"></script> 
     <script src="global/vendor/jquery-tabledit/jquery.tabledit.min.js"></script> 
     <script src="global/vendor/dropify/dropify.min.js"></script>
+    <script src="global/vendor/asrange/jquery-asRange.min.js"></script>
+    
     
     <!-- <script src="global/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.js"></script> -->
 
