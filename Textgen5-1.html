@@ -1735,20 +1735,51 @@
                    <p>Set your image and font parameter</p>
 
                    <div class="row">
-                    <div class="form-group col-md-6">
-                      <label class="form-control-label" for="inputBackgroundImage">Background Image </label>
-                      <input type="file" id="input-file-now" data-plugin="dropify" data-default-file="" />
-                    </div>
-                    <div class="form-group col-md-6">
-                      <label class="form-control-label" for="inputBackgroundColor">Background Color It no image is set</label>
-                      <input type="text" class="form-control" id="inputBackgroundColor" name="inputBackgroundColor" placeholder="#0000000ff" autocomplete="off">
+
+                      <div class="form-group col-md-6">
+                        <label class="form-control-label" for="inputBackgroundImage">Background Image </label>
+                        <input type="file" id="input-file-now" data-plugin="dropify" data-default-file="" />
+                      </div>
+                      <div class="form-group col-md-6 align-items-end">
+                        <label class="form-control-label" for="inputBackgroundColor">Background Color It no image is set</label>
+                        <br>
+                        <sl-color-picker format="hex" value="#4a90e2"></sl-color-picker>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label class="form-control-label" for="inputFonttype">Font Type </label>
+                            <div class="dropdown">
+                              <button type="button " class="btn btn-outline btn-default dropdown-toggle d-flex justify-content-between align-items-center btn-block" id="exampleHoverDropdown3" data-hover="dropdown" data-toggle="dropdown" aria-expanded="false">
+                              Select a type
+                              </button>
+                              <div class="dropdown-menu btn-block" aria-labelledby="exampleHoverDropdown3" role="menu" x-placement="top-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, -188px, 0px);">
+                                <a class="dropdown-item" href="javascript:void(0)" role="menuitem">Action</a>
+                                <a class="dropdown-item" href="javascript:void(0)" role="menuitem">Another action</a>
+                                <a class="dropdown-item" href="javascript:void(0)" role="menuitem">Something else here</a>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                          <label class="form-control-label" for="inputFontSize">Font Size </label>
+                              <div class="dropdown">
+                                <button type="button " class="btn btn-outline btn-default dropdown-toggle d-flex justify-content-between align-items-center btn-block" id="exampleHoverDropdown3" data-hover="dropdown" data-toggle="dropdown" aria-expanded="false">
+                                Select a type
+                                </button>
+                                <div class="dropdown-menu btn-block" aria-labelledby="exampleHoverDropdown3" role="menu" x-placement="top-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, -188px, 0px);">
+                                  <a class="dropdown-item" href="javascript:void(0)" role="menuitem">Action</a>
+                                  <a class="dropdown-item" href="javascript:void(0)" role="menuitem">Another action</a>
+                                  <a class="dropdown-item" href="javascript:void(0)" role="menuitem">Something else here</a>
+                                </div>
+                              </div>
+                          </div>
+                    
+                    
                     </div>
                   </div>
-  
                  </div>
               </div>
             </div>
-          </div>
+          
           <!-- End Story to image setting Section -->
 
  
@@ -1942,6 +1973,17 @@
                    </div>
                           
                 <!-- End Edit Art Elements Section 2-->
+             <!--Start Generate Sample Set Of Images Section -->
+                <div class="row">
+                  <div class="col">
+                    <div class="w-500 w-only-xs-300 ml-auto mr-auto">
+                      <button type="button" class="btn btn-primary w-p100"><i class="icon wb-chevron-down-mini" aria-hidden="true"></i> Generate Sample Set Of Images</button>
+                      <p class="px-15 pt-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, ea.</p>
+                    </div>
+                    
+                </div>
+                </div>
+        <!--End Generate Sample Set Of Images Section -->
 
 
         <!-- Dropdown Group Start -->
@@ -2051,17 +2093,12 @@
           </div>
         </div>
 
-
+<!--Start Story Generator Section -->
         
-        <div class="row">
-          <div class="col">
-            <div class="w-500 w-only-xs-300 ml-auto mr-auto mt-40">
-              <button type="button" class="btn btn-primary w-p100"><i class="icon wb-chevron-down-mini" aria-hidden="true"></i> Generate Sample Set Of Images</button>
-              <p class="px-15 pt-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, ea.</p>
-            </div>
                <div class="row"> 
                  <div class="col-12">
                   <div class="panel panel-body ">
+                    <h3 class="">Story Generator</h3>
                    <p>Automatically spin your article, use 0 and to separate blocks, check the example below </p>
                       <div class="row">
                           <!-- Start Spin Text -->
@@ -2078,24 +2115,66 @@
                              <textarea type="text" class="form-control" name="spin-text" autocomplete="off" rows="20" placeholder="How are you doing today"></textarea>
                            </form>
                         </div>
-
                          <!-- Start Spin end -->
-
                       </div>
 
-                </div>
-                </div>
+              </div>
+            </div>  
+          </div> 
+    <!--End Story Generator Section -->
 
-            <div class="w-500 w-only-xs-300 ml-auto mr-auto mt-20">
-              <button type="button" class="btn btn-success w-p100"><i class="icon wb-chevron-down-mini" aria-hidden="true"></i> Generate Sample Set Of Images</button>
-              <p class="px-15 pt-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, ea.</p>
+
+        <!-- Start image gallery Section -->
+         <div class="row">
+          <div class="col-12">
+            <div class="panel">
+               <div class="panel-body">
+                <h4 class="text-center">Sample Text</h4>
+                <div class="row">
+                  <a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox" data-gallery="gallery" class="col-md-4 p-5">
+                    <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid rounded ">
+                  </a>
+                  <a href="https://unsplash.it/1200/768.jpg?image=252" data-toggle="lightbox" data-gallery="gallery" class="col-md-4 p-5">
+                    <img src="https://unsplash.it/600.jpg?image=252" class="img-fluid rounded ">
+                  </a>
+                  <a href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox" data-gallery="gallery" class="col-md-4 p-5">
+                    <img src="https://unsplash.it/600.jpg?image=253" class="img-fluid rounded ">
+                  </a>
+                  <a href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox" data-gallery="gallery" class="col-md-4 p-5">
+                    <img src="https://unsplash.it/600.jpg?image=254" class="img-fluid rounded ">
+                  </a>
+                  <a href="https://unsplash.it/1200/768.jpg?image=255" data-toggle="lightbox" data-gallery="gallery" class="col-md-4 p-5">
+                    <img src="https://unsplash.it/600.jpg?image=255" class="img-fluid rounded ">
+                  </a>
+                  <a href="https://unsplash.it/1200/768.jpg?image=256" data-toggle="lightbox" data-gallery="gallery" class="col-md-4 p-5">
+                    <img src="https://unsplash.it/600.jpg?image=256" class="img-fluid rounded ">
+                  </a>
+                
+                
+               </div>
             </div>
           </div>
         </div>
-    
-        </div> 
       </div>
-    </div>
+        <!-- End image gallery Section -->
+
+          <!-- Start bottom sectio -->
+          <div class="row"> 
+            <div class="col-12">
+
+              <div class="w-500 w-only-xs-300 ml-auto mr-auto mt-20">
+                <button type="button" class="btn btn-success w-p100"><i class="icon wb-chevron-down-mini" aria-hidden="true"></i> Generate Sample Set Of Images</button>
+                <p class="px-15 pt-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, ea.</p>
+              </div>
+
+            </div>
+          </div>
+          <!-- End bottom sectio -->
+
+
+ </div>
+</div>
+
     <!-- End Page -->
 
 
@@ -2150,6 +2229,8 @@
     <script src="global/vendor/jquery-tabledit/jquery.tabledit.min.js"></script> 
     <script src="global/vendor/dropify/dropify.min.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.57/dist/shoelace.js/+esm"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+    
     
     <!-- <script src="global/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.js"></script> -->
 
@@ -2182,6 +2263,13 @@
     <script src="global/vendor/jquery-tabledit/asselectable.js"></script>
     <script src="global/vendor/jquery-tabledit/selectable.js"></script>
     <script src="global/vendor/jquery-tabledit/table.js"></script>
+
+    <script>
+      $(document).on("click", '[data-toggle="lightbox"]', function(event) {
+          event.preventDefault();
+          $(this).ekkoLightbox();
+        });
+    </script>
 
 
   </body>
